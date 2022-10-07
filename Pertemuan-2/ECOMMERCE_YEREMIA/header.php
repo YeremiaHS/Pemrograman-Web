@@ -39,6 +39,9 @@
                 <li class="nav-item">
                   <a class="nav-link" href="#product">Produk Kami</a>
                 </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="login.php">Login</a>
+                </li>
               </ul>
             </div>
           </div>
