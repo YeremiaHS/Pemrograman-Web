@@ -1,22 +1,25 @@
 <?php
-    include_once "header.php";
-    include_once "banner.php";
-    include_once "content.php";
+session_start();
+
+$database = [
+    'username' => 'yeremia',
+    'password' => 'yeremia123'
+];
+
+if(isset($_POST['submit'])) {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    if($username == $database['username'] && $password== $database['password']) {
+        $_SESSION['username'] = $username;
+
+        header('location:dashboard.php');
+    } else {
+        echo '<script> alert("Username atau Password salah!");
+        window.location = "login.php"; </script>';
+    }
+} else {
+    echo '<script> window.location="home.php"; </script>';
+}
+
 ?>
-<!-- Footer -->
-<footer>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="inner-content">
-                <p>Copyright &copy; 2022 Toko Buku Jaya
-                <a href="https://www.instagram.com/yeremiah_s/">Yeremia Herbert Santoso</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-      <!-- Footer -->
-    </header>
-  </body>
-</html>

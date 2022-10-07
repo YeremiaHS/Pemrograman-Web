@@ -2,7 +2,7 @@
 session_start();
 
 if(isset($_SESSION['username'])) {
-  header('Location:dashboard.php');
+  header('Location:index.php');
 }
 
 $asset = "http://localhost/pemrograman-web-yeremia/pertemuan-2/ecommerce_yeremia/assets/";
