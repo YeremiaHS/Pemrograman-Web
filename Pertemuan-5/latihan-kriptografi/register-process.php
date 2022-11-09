@@ -9,7 +9,7 @@ if (isset($_POST['submit'])) {
     date_default_timezone_set('Asia/Jakarta');
     $created = date("Y-m-d H:i:s");
 
-    include_once("config.php");
+    include_once("conifg.php");
 
     $result = mysqli_query($conn, "INSERT INTO users(username, gender, email, password, created_at) VALUES ('$username', '$gender', '$email', '$password', '$created')");
 

@@ -3,7 +3,7 @@ session_start();
 
 $username = $_POST['username'];
 
-include_once('config.php');
+include_once('conifg.php');
 
 $query = mysqli_query($conn, "SELECT * FROM users WHERE username = '$username'");
 $user = mysqli_fetch_assoc($query);

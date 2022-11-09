@@ -19,7 +19,7 @@ if (isset($_SESSION['username'])) {
     <a href="index.php"> Go to Home </a>
     <br /><br />
 
-    <form action="register_process.php" method="POST">
+    <form action="register-process.php" method="POST">
         <table width="25%" border="0">
             <tr>
                 <td> Username </td>
@@ -49,7 +49,7 @@ if (isset($_SESSION['username'])) {
             <tr>
                 <td></td>
                 <td></td>
-                <td> <input type="subit" name="submit" value="Register"></td>
+                <td> <input type="submit" name="submit" value="Register"></td>
             </tr>
         </table>
     </form>
